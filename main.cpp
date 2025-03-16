@@ -3,16 +3,17 @@
 using namespace std;
 
 int main(){
-    int n, len;
-    cout << "Введите число - " ;
+    int n;
+    cout << "Введите число - ";
     cin >> n;
-    len = n;
-    int ar[len];
-    while (n <= len){
-        if (n%2){
-            ar
+    int len = n / 2 - 1;
+    int numbers[len];
+    for (int i = 0; i <= len; i++) {
+        if (i % 2){
+            numbers[i] = i;
         }
-        n++;
     }
-    return 0;
+    for (int i = 0; i <= len; i++) {
+        cout << numbers[i] << endl;
+    }
 }
